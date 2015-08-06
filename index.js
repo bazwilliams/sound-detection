@@ -4,8 +4,8 @@ var pcm = require('pcm-boilerplate');
 var qmean = require('compute-qmean');
 var mean = require('compute-incrmmean');
 
-function NoiseDetection(url, triggerLevel, callback) {
-    var streamDecoder = new pcm.StreamDecoder({bitDepth: 16, numberOfChannels: 1, signed: true});
+function NoiseDetection(options, callback) {
+    var streamDecoder = new pcm.StreamDecoder(options.format});
     var rmsAvg = mean(2000);
 
     function toDecibel(rms) {
@@ -24,14 +24,14 @@ function NoiseDetection(url, triggerLevel, callback) {
             rms = qmean(samples);
             rmsAvg(rms);
             dB = toDecibel(rms);
-            if (dB > toDecibel(rmsAvg()) + triggerLevel) {
+            if (dB > toDecibel(rmsAvg()) + options.triggerLevel) {
                 callback(dB);
             }
         }
     }
 
     this.start = function() {
-        http.get(url, function (source) {
+        http.get(options.url, function (source) {
             source.pipe(streamDecoder);
             streamDecoder.on('readable', processBlock);
         });
