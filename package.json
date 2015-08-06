@@ -10,7 +10,6 @@
     "url": "https://github.com/bazwilliams/sound-detection.git"
   },
   "dependencies": {
-    "commander": "^2.8.1",
     "compute-incrmmean": "^1.0.2",
     "compute-qmean": "^1.0.0",
     "pcm-boilerplate": "^0.1.1",
