@@ -1,8 +1,7 @@
 Sound Detection
 ===
-[![NPM version][npm-image]][npm-url] 
 
-> Library to detect sudden noises above ambient from a network stream such as an IP Webcam or network microphone.
+Library to detect sudden noises above ambient from a network stream such as an IP Webcam or network microphone.
 
 Example usage would be to monitor the microphone of an IP camera used as a Baby monitor, the trigger could be used to switch lights on, trigger a pushover alert or video recording. 
 
