@@ -1,6 +1,6 @@
 {
   "name": "sound-detection",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Library to detect sudden noises above ambient from a network stream such as an IP Webcam or network microphone. ",
   "author": "Barry John Williams <barry@bjw.me.uk>",
   "readme": "README.md",

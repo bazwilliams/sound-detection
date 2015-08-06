@@ -5,7 +5,7 @@ var qmean = require('compute-qmean');
 var mean = require('compute-incrmmean');
 
 function NoiseDetection(options, callback) {
-    var streamDecoder = new pcm.StreamDecoder(options.format});
+    var streamDecoder = new pcm.StreamDecoder(options.format);
     var rmsAvg = mean(2000);
 
     function toDecibel(rms) {
