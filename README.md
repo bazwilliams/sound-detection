@@ -1,16 +1,23 @@
-# sound-detection
+Sound Detection
+===
+[![NPM version][npm-image]][npm-url] 
 
-Library to detect sudden noises above ambient from a network stream such as an IP Webcam or network microphone.
+> Library to detect sudden noises above ambient from a network stream such as an IP Webcam or network microphone.
 
 Example usage would be to monitor the microphone of an IP camera used as a Baby monitor, the trigger could be used to switch lights on, trigger a pushover alert or video recording. 
 
-# Usage 
+## Installation
+
+``` bash
+$ npm install sound-detection
+```
+## Usage 
 
 The ambient noise is constantly monitored and adapts over time, the `triggerLevel` variables indicates how much over the background noise in decibels is required to trigger the callback which is invoked with the detected decibel value. 
 
 The decibel value is referenced against the maximum volume transmitted in a PCM stream. 
 
-# Example Usage
+### Sample App
 
 ```javascript
 var SoundDetection = require('sound-detection');
