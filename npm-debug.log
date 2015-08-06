@@ -1,0 +1,72 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/barry/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/barry/.npm/sound-detection/0.0.1/package.tgz', '.' ]
+11 verbose tarball /home/barry/.npm/sound-detection/0.0.1/package.tgz
+12 verbose folder .
+13 info prepublish sound-detection@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/barry/.npm/1f1177db-tar.lock
+16 silly lockFile 8cb7a3fe-ound-detection-0-0-1-package-tgz tar:///home/barry/.npm/sound-detection/0.0.1/package.tgz
+17 verbose lock tar:///home/barry/.npm/sound-detection/0.0.1/package.tgz /home/barry/.npm/8cb7a3fe-ound-detection-0-0-1-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 8cb7a3fe-ound-detection-0-0-1-package-tgz tar:///home/barry/.npm/sound-detection/0.0.1/package.tgz
+21 silly lockFile 8cb7a3fe-ound-detection-0-0-1-package-tgz tar:///home/barry/.npm/sound-detection/0.0.1/package.tgz
+22 silly lockFile cf56ac0c-pm-sound-detection-0-0-1-package /home/barry/.npm/sound-detection/0.0.1/package
+23 verbose lock /home/barry/.npm/sound-detection/0.0.1/package /home/barry/.npm/cf56ac0c-pm-sound-detection-0-0-1-package.lock
+24 silly lockFile cf56ac0c-pm-sound-detection-0-0-1-package /home/barry/.npm/sound-detection/0.0.1/package
+25 silly lockFile cf56ac0c-pm-sound-detection-0-0-1-package /home/barry/.npm/sound-detection/0.0.1/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'sound-detection',
+28 silly publish   version: '0.0.1',
+28 silly publish   description: 'Library to detect sudden noises above ambient from a network stream such as an IP Webcam or network microphone. ',
+28 silly publish   author: { name: 'Barry John Williams', email: 'barry@bjw.me.uk' },
+28 silly publish   readme: 'README.md',
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/bazwilliams/sound-detection.git' },
+28 silly publish   dependencies:
+28 silly publish    { commander: '^2.8.1',
+28 silly publish      'compute-incrmmean': '^1.0.2',
+28 silly publish      'compute-qmean': '^1.0.0',
+28 silly publish      'pcm-boilerplate': '^0.1.1',
+28 silly publish      underscore: '^1.8.3' },
+28 silly publish   devDependencies: {},
+28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly publish   keywords: [ 'babymonitor', 'audio', 'noise', 'decibel', 'detection', 'sound' ],
+28 silly publish   license: 'MIT',
+28 silly publish   gitHead: 'eb131fbc08e2340922f529c7ee8d51eb3582908f',
+28 silly publish   bugs: { url: 'https://github.com/bazwilliams/sound-detection/issues' },
+28 silly publish   homepage: 'https://github.com/bazwilliams/sound-detection',
+28 silly publish   _id: 'sound-detection@0.0.1',
+28 silly publish   _shasum: '03d55c9e2971eff0f8057883dcf0b5d0b2173122',
+28 silly publish   _from: '.' }
+29 error need auth auth and email required for publishing
+29 error need auth You need to authorize this machine using `npm adduser`
+30 error System Linux 3.18.14+
+31 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+32 error cwd /home/barry/sound-detection
+33 error node -v v0.10.36
+34 error npm -v 1.4.28
+35 error code ENEEDAUTH
+36 verbose exit [ 1, true ]

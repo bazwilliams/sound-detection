@@ -1,8 +1,14 @@
 {
   "name": "sound-detection",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Library to detect sudden noises above ambient from a network stream such as an IP Webcam or network microphone. ",
-  "main": "app.js",
+  "author": "Barry John Williams <barry@bjw.me.uk>",
+  "readme": "README.md",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bazwilliams/sound-detection.git"
+  },
   "dependencies": {
     "commander": "^2.8.1",
     "compute-incrmmean": "^1.0.2",
@@ -22,6 +28,5 @@
     "detection",
     "sound"
   ],
-  "author": "Barry John Williams",
   "license": "MIT"
 }
