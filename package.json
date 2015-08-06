@@ -1,0 +1,27 @@
+{
+  "name": "sound-detection",
+  "version": "1.0.0",
+  "description": "Library to detect sudden noises above ambient from a network stream such as an IP Webcam or network microphone. ",
+  "main": "app.js",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "compute-incrmmean": "^1.0.2",
+    "compute-qmean": "^1.0.0",
+    "pcm-boilerplate": "^0.1.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "babymonitor",
+    "audio",
+    "noise",
+    "decibel",
+    "detection",
+    "sound"
+  ],
+  "author": "Barry John Williams",
+  "license": "MIT"
+}
