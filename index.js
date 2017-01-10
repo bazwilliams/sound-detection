@@ -24,7 +24,11 @@ function NoiseDetection(options, callback) {
             rms = qmean(samples);
             rmsAvg(rms);
             dB = toDecibel(rms);
-            if (dB > toDecibel(rmsAvg()) + options.triggerLevel) {
+            if (options.triggerLevel)
+                if (dB > toDecibel(rmsAvg()) + options.triggerLevel) {
+                    callback(dB);
+                }
+            } else {
                 callback(dB);
             }
         }
