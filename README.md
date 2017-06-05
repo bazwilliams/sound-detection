@@ -22,13 +22,13 @@ The decibel value is referenced against the maximum volume transmitted in a PCM 
 var SoundDetection = require('sound-detection');
 
 var options = {
-    url = 'http://babymonitorcam/audio.cgi'
+    url: 'http://babymonitorcam/audio.cgi'
     format: {
         bitDepth: 16,
         numberOfChannels: 1,
         signed: true
     },
-    triggerLevel = 30
+    triggerLevel: 30
 }
 
 var detector = new SoundDetection(options, function(dB) {
